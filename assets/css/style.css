@@ -1,3 +1,152 @@
-:root {
+/* --------- Global style */
+
+body {
+    background-color: white;
+    color: #445361;
     font-family: 'Shadows Into Light Two', sans-serif;
+    text-align: center;
+}
+
+/* --------- Heading */
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.logo {
+    height: 40px;
+    padding-right: 5px;
+}
+
+/* --------- Game layout */
+
+.game-area {
+    background-color: #E6ECF0;
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.question-area {
+    width: 50%;
+    font-size: 2rem;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.question-area span {
+    padding: 0 15px;
+}
+
+.score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+#score {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+.answer-message {
+    display: none;
+    font-size: 1rem;
+}
+
+.scores {
+    display: inline-block;
+    padding: 25px;
+}
+
+/* --------- Buttons */
+
+.answer-btn {
+    width: 220px;
+    height: 60px;
+    letter-spacing: 1.2px;
+    color: white;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn--big {
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 10px solid;
+    width: 100px;
+    height: 100px;
+    font-size: 3.2rem;
+    margin: 0 30px;
+    transition: all 0.5s;
+}
+
+/* --------- Media queries */
+
+@media (max-width: 414px) {
+    .controls-area {
+        width: 100%;
+    }
+
+    .question-area {
+        padding: 10% 0;
+        width: 100%;
+    }
+
+    .question-area span {
+        padding: 0;
+    }
+
+    .answer-message {
+        display: block;
+    }
+
+    #answer-box {
+        display: block;
+        margin: 0 auto;
+    }
+  
+    .score-area {
+        width: 100%;
+    }
+
+    .scores {
+        margin: 0.5em auto;
+        display: block;
+        padding: 5px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .game-area {
+        height: 70vh;
+    }
+
+    .controls-area {
+        width: 75%;
+        margin: 10px auto;
+    }
+
+    .question-area {
+        padding: 10px 0;
+    }
+
 }
