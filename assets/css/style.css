@@ -8,10 +8,18 @@
     scroll-behavior: smooth;
 }
 
+:root {
+    --white: #edf6f9;
+    --green: #006d77;
+    --peach: #ffddd2;
+    --correct: #83c5be;
+    --incorrect: #e29578;
+}
+
 
 body {
     background: url(../images/Cute_Clouds_Pattern_on_Blue_Background_generated.jpg) no-repeat center center;
-    background-color: white;
+    background-color: var(--white);
     height: 100%;
     color: #445361;
     font-family: Shadows Into Light Two, sans-serif;
@@ -47,14 +55,12 @@ body {
     height: auto;
     width: auto;
     padding: 5px 20px;
-
 }
 
 /* Game layout */
 
 .game-area {
-    background-color: #E6ECF0;
-    box-sizing: border-box;
+    background-color: var(--peach);
     border-radius: 10px;
     width: 85%;
     height: 65vh;
@@ -74,6 +80,10 @@ body {
 
 .question-area span {
     padding: 0 15px;
+}
+
+.submit-answer {
+    padding: 20px;
 }
 
 .score-area {
@@ -118,10 +128,11 @@ body {
 .submit-btn {
     /* padding-top: 10px; */
     background-color: white;
+    font-size: 1rem;
     border: 1px solid;
     border-radius: 5px;
-    width: 5rem;
-    height: 3rem;
+    width: 250px;
+    height: 60px;
     margin: 0 30px;
     transition: all 0.5s;
 }
