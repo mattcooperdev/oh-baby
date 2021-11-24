@@ -51,9 +51,15 @@ body {
     padding: 5px;
 }
 
-.fa-baby {
+/* .fa-baby {
     font-size: 90px;
     height: auto;
+    width: auto;
+    padding: 5px 20px;
+} */
+
+.logo {
+    height: 8rem;
     width: auto;
     padding: 5px 20px;
 }
@@ -63,8 +69,8 @@ body {
 .game-area {
     background-color: var(--peach);
     border-radius: 10px;
-    width: 85%;
-    height: 65vh;
+    width: 85vw;
+    height: 70vh;
     max-height: auto;
     max-width: 830px;
     margin-left: auto;
