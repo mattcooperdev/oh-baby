@@ -43,9 +43,10 @@ body {
 }
 
 .fa-baby {
+    font-size: 100px;
     height: auto;
     width: auto;
-    padding: 5px;
+    padding: 5px 20px;
 
 }
 
