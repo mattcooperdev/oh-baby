@@ -1,32 +1,63 @@
-/* --------- Global style */
+/*Global style */
 
-body {
-    background-color: white;
-    color: #445361;
-    font-family: 'Shadows Into Light Two', sans-serif;
-    text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-/* --------- Heading */
+
+body {
+    background: url(../images/Cute_Clouds_Pattern_on_Blue_Background_generated.jpg) no-repeat center center;
+    background-color: white;
+    height: 100%;
+    color: #445361;
+    font-family: Shadows Into Light Two, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Utilities */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Heading */
 
 .heading {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 8rem;
+    padding: 5px;
 }
 
-.logo {
-    height: 40px;
-    padding-right: 5px;
+.fa-baby {
+    height: auto;
+    width: auto;
+    padding: 5px;
+
 }
 
-/* --------- Game layout */
+/* Game layout */
 
 .game-area {
     background-color: #E6ECF0;
     box-sizing: border-box;
+    border-radius: 10px;
     width: 85%;
     height: 65vh;
-    max-height: 450px;
+    max-height: auto;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
@@ -70,7 +101,7 @@ body {
     padding: 25px;
 }
 
-/* --------- Buttons */
+/*Buttons */
 
 .answer-btn {
     width: 220px;
@@ -83,19 +114,18 @@ body {
     outline: none;
 }
 
-.btn--big {
-    padding-top: 10px;
-    border-radius: 50%;
+.submit-btn {
+    /* padding-top: 10px; */
     background-color: white;
-    border: 10px solid;
-    width: 100px;
-    height: 100px;
-    font-size: 3.2rem;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 5rem;
+    height: 3rem;
     margin: 0 30px;
     transition: all 0.5s;
 }
 
-/* --------- Media queries */
+/*Media queries */
 
 @media (max-width: 414px) {
     .controls-area {
