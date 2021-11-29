@@ -64,6 +64,48 @@ body {
     padding: 5px 20px;
 }
 
+.modal-bg {
+    display: ; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.rules-modal {
+    background-color: var(--white);
+    width: 30%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.rules-modal p {
+    font-size: 1.3rem;
+}
+
+.rules-modal i {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.name-input {
+    width: 40%;
+    height: 10%;
+    border: var(--green) 2px solid;
+    border-radius: 5px;
+    text-align: center;
+} 
+
 /* Game layout */
 
 .game-area {
@@ -126,6 +168,21 @@ body {
 }
 
 /*Buttons */
+
+.start-game-btn {
+    background-color: var(--green);
+    color: var(--white);
+    font-family: inherit;
+    font-size: 1.5rem;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 250px;
+    height: 60px;
+    position: relative;
+    margin: 0 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
 
 .answer-btn {
     background-color: var(--green);
