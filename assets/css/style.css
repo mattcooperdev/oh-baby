@@ -65,21 +65,35 @@ body {
 }
 
 .modal-bg {
-    display: ; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4); 
+    /* visibility: hidden;
+    transition: visibility 0s, opacity 0.3s; */
+}
+
+.modal-bg-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .rules-modal {
+    position: relative;
     background-color: var(--white);
     width: 30%;
+    min-width: 300px;
     height: 40%;
     display: flex;
     justify-content: space-around;
@@ -87,6 +101,15 @@ body {
     flex-direction: column;
     padding: 5px;
     border-radius: 10px;
+}
+
+.rules-modal-hidden {
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.3s;
+}
+
+.rules-modal h2 {
+    font-family: Amatic SC, sans-serif;
 }
 
 .rules-modal p {
@@ -101,7 +124,7 @@ body {
 .name-input {
     width: 40%;
     height: 10%;
-    border: var(--green) 2px solid;
+    border: var(--peach) 2px solid;
     border-radius: 5px;
     text-align: center;
 } 
@@ -118,6 +141,13 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.3s;
+}
+
+.game-area-active {
+    visibility: visible;
+    opacity: 1;    
 }
 
 .question-area {
@@ -169,7 +199,7 @@ body {
 
 /*Buttons */
 
-.start-game-btn {
+.start-btn {
     background-color: var(--green);
     color: var(--white);
     font-family: inherit;
