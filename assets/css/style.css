@@ -76,7 +76,7 @@ body {
     transition: visibility 0s, opacity 0.3s; */
 }
 
-.modal-bg-active {
+.modal-bg.active {
     visibility: visible;
     opacity: 1;
 }
@@ -145,7 +145,12 @@ body {
     transition: visibility 0s, opacity 0.3s;
 }
 
-.game-area-active {
+/* .game-area-active {
+    visibility: visible;
+    opacity: 1;    
+} */
+
+.game-area.active {
     visibility: visible;
     opacity: 1;    
 }
