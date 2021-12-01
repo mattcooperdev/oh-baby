@@ -30,10 +30,10 @@ let modalClose = document.querySelector('.modal-close')
 let gameArea = document.querySelector('.game-area')
 let submitAnswer = document.querySelector('submit-btn')
 
-startBtn.addEventListener('click', function(){
-    gameArea.classList.remove('.hidden');
-})
+// startBtn.addEventListener('click', function(){
+//     gameArea.classList.remove('.hidden');
+// })
 
 modalClose.addEventListener('click', function(){
-    modal.classList.add('.hidden');
+    modal.style.display = "none";
 })
