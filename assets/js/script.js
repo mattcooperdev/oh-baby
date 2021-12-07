@@ -33,6 +33,7 @@ let submitAnswer = document.querySelector('submit-btn')
 startBtn.addEventListener('click', () => {
     runGame()
     modal.style.display = "none";
+    gameArea.classList.remove("hide");
 })
 
 modalClose.addEventListener('click', () => {
