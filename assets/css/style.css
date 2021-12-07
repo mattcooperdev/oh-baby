@@ -174,7 +174,7 @@ body {
     font-size: 1.2rem;
 }
 
-#score {
+#correct {
     color: var(--correct);
     font-weight: bold;
 }
@@ -221,6 +221,14 @@ body {
     font-family: inherit;
     letter-spacing: 1.2px;
     cursor: pointer;
+}
+
+.answer-btn.correct {
+    background-color: var(--correct);
+}
+
+.answer-btn.incorrect {
+    background-color: var(--incorrect);
 }
 
 .answer-btn:focus {
