@@ -124,7 +124,7 @@ body {
 .name-input {
     font-size: 2rem;
     width: 40%;
-    height: auto;
+    height: 70px;
     border: var(--peach) 2px solid;
     border-radius: 5px;
     text-align: center;
@@ -199,14 +199,14 @@ body {
 /*Buttons */
 
 .start-btn, .rules-btn {
-    background-color: var(--green);
-    color: var(--white);
+    background-color: var(--peach);
+    color: var(--green);
     font-family: inherit;
-    font-size: 1.5rem;
+    font-size: 2rem;
     border: 1px solid;
     border-radius: 5px;
     width: 70vw;
-    height: 60px;
+    height: 70px;
     position: relative;
     margin: 20px;
     cursor: pointer;
@@ -246,6 +246,16 @@ body {
 
 /*Media queries */
 
+@media (max-width: 500px) {
+    .heading {
+        font-size: 6rem;
+    }
+    .logo {
+        height: 6rem;
+    }
+}
+
+
 @media (max-width: 414px) {
     .controls-area {
         width: 100%;
@@ -279,8 +289,14 @@ body {
         padding: 5px;
     }
 
+}
+
+@media (max-width: 360px) {
     .heading {
-        font-size: 2rem;
+        font-size: 4.5rem;
+    }
+    .logo {
+        height: 4.5rem;
     }
 }
 
