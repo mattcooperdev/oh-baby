@@ -21,17 +21,16 @@ function incrementWrongAnswer() {
 
 let startBtn = document.querySelector('.start-btn')
 let rulesBtn = document.querySelector('.rules-btn')
-let modal = document.querySelector('.modal-bg')
 let mainArea = document.querySelector('.main-area')
 let rulesArea = document.querySelector('.rules-area')
 let gameArea = document.querySelector('.game-area')
 let modalClose = document.querySelector('.modal-close')
-let submitAnswer = document.querySelector('submit-btn')
+let nextBtn = document.querySelector('next-btn')
 
 startBtn.addEventListener('click', () => {
     runGame()
-    modal.style.display = "none";
     gameArea.classList.remove("hide");
+    mainArea.classList.add("hide");
 })
 
 rulesBtn.addEventListener('click', () => {

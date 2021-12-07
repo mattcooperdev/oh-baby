@@ -163,7 +163,7 @@ body {
     padding: 0 15px;
 }
 
-.submit-answer {
+.next {
     padding: 20px;
 }
 
@@ -226,7 +226,7 @@ body {
     outline: none;
 }
 
-.submit-btn {
+.next-btn {
     /* padding-top: 10px; */
     background-color: var(--white);
     color: var(--green);
