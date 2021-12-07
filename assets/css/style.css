@@ -21,7 +21,7 @@ body {
     background: url(../images/Cute_Clouds_Pattern_on_Blue_Background_generated.jpg) no-repeat center center;
     background-color: var(--white);
     font-family: Shadows Into Light Two, sans-serif;
-    height: 100%;
+    height: 100vh;
     color: var(--green);
     text-align: center;
     overflow-x: hidden;
@@ -42,7 +42,7 @@ body {
     height: 100%;
 }
 
-/* Heading */
+/* Heading and Logo */
 
 .heading {
     font-family: Amatic SC, sans-serif;
@@ -63,6 +63,8 @@ body {
     width: auto;
     padding: 5px 20px;
 }
+
+/* Main Area*/
 
 .modal-bg {
     position: fixed;
@@ -118,8 +120,8 @@ body {
     text-align: center;
 } 
 
-.hidden {
-    visibility: hidden;
+.hide {
+    display: none;
 }
 
 /* Game layout */
@@ -225,10 +227,10 @@ body {
     font-size: 1.5rem;
     border: 1px solid;
     border-radius: 5px;
-    width: 250px;
+    width: 60vw;
     height: 60px;
-    position: relative;
-    margin: 0 30px;
+    /* position: relative; */
+    /* margin: 0 30px; */
     transition: all 0.5s;
 }
 
