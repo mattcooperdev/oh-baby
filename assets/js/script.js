@@ -1,7 +1,3 @@
-// const startButton = document.getElementById('start-btn')
-
-
-// startButton.addEventListener('click', runGame) 
 
 function runGame() {
 
@@ -24,10 +20,12 @@ function incrementWrongAnswer() {
 }
 
 let startBtn = document.querySelector('.start-btn')
+let rulesBtn = document.querySelector('.rules-btn')
 let modal = document.querySelector('.modal-bg')
-let rules = document.querySelector('.rules-area')
-let modalClose = document.querySelector('.modal-close')
+let mainArea = document.querySelector('.main-area')
+let rulesArea = document.querySelector('.rules-area')
 let gameArea = document.querySelector('.game-area')
+let modalClose = document.querySelector('.modal-close')
 let submitAnswer = document.querySelector('submit-btn')
 
 startBtn.addEventListener('click', () => {
@@ -36,6 +34,12 @@ startBtn.addEventListener('click', () => {
     gameArea.classList.remove("hide");
 })
 
+rulesBtn.addEventListener('click', () => {
+    rulesArea.classList.remove("hide");
+    mainArea.classList.add("modal-bg")
+})
+
 modalClose.addEventListener('click', () => {
-    modal.style.display = "none";
+    rulesArea.classList.add("hide");
+    mainArea.classList.remove("modal-bg")
 })
