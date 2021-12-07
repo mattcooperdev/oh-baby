@@ -55,13 +55,6 @@ body {
     padding: 5px;
 }
 
-/* .fa-baby {
-    font-size: 90px;
-    height: auto;
-    width: auto;
-    padding: 5px 20px;
-} */
-
 .logo {
     height: 8rem;
     width: auto;
@@ -151,6 +144,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+    box-shadow: 0 0 10px 2px;
 }
 
 .question-area {
