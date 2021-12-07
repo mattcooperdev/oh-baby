@@ -44,6 +44,10 @@ body {
 
 /* Heading and Logo */
 
+.header {
+    margin-top: 2rem;
+}
+
 .heading {
     font-family: Amatic SC, sans-serif;
     text-align: center;
