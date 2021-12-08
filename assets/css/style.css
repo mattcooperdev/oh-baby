@@ -236,7 +236,7 @@ body {
     outline: none;
 }
 
-.next-btn {
+.restart-btn {
     /* padding-top: 10px; */
     background-color: var(--white);
     color: var(--green);

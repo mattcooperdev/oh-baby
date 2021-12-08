@@ -1,5 +1,5 @@
 let randomQuestions, currentQuestionIndex
-const nextBtn = document.getElementsByClassName('next-btn')
+const restartBtn = document.getElementsByClassName('restart-btn')
 const questionElement = document.getElementById('question')
 const answerButtons = document.getElementById('answer-buttons')
 
@@ -32,7 +32,6 @@ function showQuestion(question) {
 }
 
 function resetState() {
-    // nextBtn.classList.add("hide")
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild)
     }
