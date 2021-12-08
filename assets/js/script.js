@@ -5,8 +5,8 @@ const answerButtons = document.getElementById('answer-buttons')
 
 
 function runGame() {
-    gameArea.classList.remove("hide")
-    mainArea.classList.add("hide")
+    gameArea.classList.remove('hide')
+    mainArea.classList.add('hide')
     randomQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     setNextQuestion()
@@ -41,7 +41,7 @@ function resetState() {
 function checkAnswer(event) {
     const selectedButton = event.target
     const correct = selectedButton.dataset.correct
-    setStatusClass(correct)
+    setStatusClass(selectedButton, correct)
     Array.from(answerButtons.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
@@ -50,15 +50,15 @@ function checkAnswer(event) {
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
-        element.classList.add("correct")
+        element.classList.add('correct')
     } else {
-        element.classList.add("incorrect")
+        element.classList.add('incorrect')
     }
 }
 
 function clearStatusClass(element) {
-    element.classList.remove("correct")
-    element.classList.remove("incorrect")
+    element.classList.remove('correct')
+    element.classList.remove('incorrect')
 }
 
 function incrementScore() {
@@ -81,17 +81,17 @@ const modalClose = document.querySelector('.modal-close')
 startBtn.addEventListener('click', runGame) 
 
 rulesBtn.addEventListener('click', () => {
-    rulesArea.classList.remove("hide");
-    mainArea.classList.add("modal-bg")
-    startBtn.classList.add("hide");
-    rulesBtn.classList.add("hide");
-    nameBox.classList.add("hide")
+    rulesArea.classList.remove('hide');
+    mainArea.classList.add('modal-bg')
+    startBtn.classList.add('hide');
+    rulesBtn.classList.add('hide');
+    nameBox.classList.add('hide')
 })
 
 modalClose.addEventListener('click', () => {
-    rulesArea.classList.add("hide");
-    mainArea.classList.remove("modal-bg");
-    startBtn.classList.remove("hide");
-    rulesBtn.classList.remove("hide");
-    nameBox.classList.remove("hide")
+    rulesArea.classList.add('hide');
+    mainArea.classList.remove('modal-bg');
+    startBtn.classList.remove('hide');
+    rulesBtn.classList.remove('hide');
+    nameBox.classList.remove('hide')
 })

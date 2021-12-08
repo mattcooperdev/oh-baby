@@ -175,12 +175,12 @@ body {
     font-size: 1.2rem;
 }
 
-#correct {
+.correct {
     color: var(--correct);
     font-weight: bold;
 }
 
-#incorrect {
+.incorrect {
     color: var(--incorrect);
     font-weight: bold;
 }
