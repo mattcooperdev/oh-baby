@@ -260,6 +260,16 @@ body {
     .logo {
         height: 6rem;
     }
+    
+    .score-area {
+        width: 100%;
+    }
+
+    .scores {
+        margin: 0.5em auto;
+        display: block;
+        padding: 5px;
+    }
 }
 
 
@@ -286,16 +296,6 @@ body {
         margin: 0 auto;
     }
   
-    .score-area {
-        width: 100%;
-    }
-
-    .scores {
-        margin: 0.5em auto;
-        display: block;
-        padding: 5px;
-    }
-
 }
 
 @media (max-width: 360px) {
