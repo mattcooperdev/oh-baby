@@ -321,3 +321,29 @@ body {
     }
 
 }
+
+/*Footer*/
+
+.footer-container {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-networks {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.social-networks>li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 300%;
+    margin: 1%;
+    padding: 1rem;
+    color: var(--green);
+}
