@@ -161,14 +161,6 @@ body {
     grid-gap: 10px;
 }
 
-.question-area span {
-    padding: 0 15px;
-}
-
-.next {
-    padding: 20px;
-}
-
 .score-area {
     margin: 5px auto;
     width: 60%;
@@ -260,7 +252,7 @@ body {
     .logo {
         height: 6rem;
     }
-    
+
     .score-area {
         width: 100%;
     }
