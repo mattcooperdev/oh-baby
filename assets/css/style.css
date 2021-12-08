@@ -46,7 +46,7 @@ body {
 /* Heading and Logo */
 
 .header {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .heading {
@@ -328,6 +328,7 @@ body {
 .footer-container {
     position: fixed;
     width: 100%;
+    height: auto;
     bottom: 0;
 }
 
