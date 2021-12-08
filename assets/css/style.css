@@ -6,6 +6,7 @@
     border: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 :root {
@@ -30,7 +31,7 @@ body {
 /* Utilities */
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0;
 }
@@ -331,9 +332,10 @@ body {
 }
 
 .social-networks {
-    display: flex;
+    /* display: flex; */
     text-align: center;
     justify-content: center;
+    max-width: 1400px;
 
 }
 
