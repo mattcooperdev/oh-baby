@@ -17,6 +17,16 @@ function setNextQuestion() {
 
 function showQuestion(question) {
     questionElement.innerText = question.question
+    question.answers.forEach(answer => {
+        const button = document.createElement('answer-btn')
+        button.innerText = answer.text
+        button.classList.add('answer-btn')
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener('click', checkAnswer)
+        answerButtons.appendChild(button)
+    })
 }
 
 function checkAnswer() {
