@@ -1,4 +1,5 @@
 let randomQuestions, currentQuestionIndex
+const nextBtn = document.getElementsByClassName('next-btn')
 const questionElement = document.getElementById('question')
 const answerButtons = document.getElementById('answer-buttons')
 
@@ -12,6 +13,7 @@ function runGame() {
 }
 
 function setNextQuestion() {
+    resetState()
     showQuestion(randomQuestions[currentQuestionIndex])
 }
 
@@ -29,8 +31,34 @@ function showQuestion(question) {
     })
 }
 
-function checkAnswer() {
+function resetState() {
+    // nextBtn.classList.add("hide")
+    while (answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild)
+    }
+}
 
+function checkAnswer(event) {
+    const selectedButton = event.target
+    const correct = selectedButton.dataset.correct
+    setStatusClass(correct)
+    Array.from(answerButtons.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+    })
+}
+
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add("correct")
+    } else {
+        element.classList.add("incorrect")
+    }
+}
+
+function clearStatusClass(element) {
+    element.classList.remove("correct")
+    element.classList.remove("incorrect")
 }
 
 function incrementScore() {
@@ -48,7 +76,7 @@ const mainArea = document.querySelector('.main-area')
 const rulesArea = document.querySelector('.rules-area')
 const gameArea = document.querySelector('.game-area')
 const modalClose = document.querySelector('.modal-close')
-const nextBtn = document.querySelector('next-btn')
+// const nextBtn = document.querySelector('next-btn')
 
 startBtn.addEventListener('click', runGame) 
 
