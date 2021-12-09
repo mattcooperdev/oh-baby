@@ -1,6 +1,7 @@
 //Global Variables
 
 let randomQuestions, currentQuestionIndex
+let currentScore = 0
 const restartBtn = document.getElementsByClassName('restart-btn')
 const questionElement = document.getElementById('question')
 const answerButtons = document.getElementById('answer-buttons')
@@ -115,15 +116,15 @@ function clearStatusClass(element) {
 /*Adds score to correct when called*/
 
 function incrementScore() {
-    let oldScore = parseInt(document.getElementById('score').innerText)
-    document.getElementById('score').innerText = ++oldScore
+    let currentScore = parseInt(document.getElementById('score').innerText)
+    document.getElementById('score').innerText = ++currentScore
 }
 
 /*Adds score to incorrect when called*/
 
 function incrementWrongAnswer() {
-    let oldScore = parseInt(document.getElementById('incorrect').innerText)
-    document.getElementById('incorrect').innerText = ++oldScore
+    let wrongScore = parseInt(document.getElementById('incorrect').innerText)
+    document.getElementById('incorrect').innerText = ++wrongScore
 }
 
 // Event Listeners
