@@ -2,6 +2,7 @@
 
 let randomQuestions, currentQuestionIndex
 let currentScore = 0
+let answerDisabled = false
 const restartBtn = document.getElementById('restart-btn')
 const questionElement = document.getElementById('question')
 const answerButtons = document.getElementById('answer-buttons')
@@ -61,28 +62,32 @@ function resetState() {
 gives answe message according to answer and calls next question after 3 seconds*/
 
 function checkAnswer(event) {
-    const selectedButton = event.target
-    const correct = selectedButton.dataset.correct
-    setStatusClass(selectedButton, correct)
-    Array.from(answerButtons.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })
-    if(correct) {
-        answerMessage.innerHTML = ('Oh Yay! You got it right!')
-        incrementScore()
-    } else {
-        answerMessage.innerHTML = ('Oh No! You got it wrong!')
-        incrementWrongAnswer()
-    }
-    setTimeout(()=> {
-        currentQuestionIndex++
-        // setNextQuestion()
-        if (currentQuestionIndex <= 9) {
-            setNextQuestion()
+    if (answerDisabled == false) { 
+        answerDisabled = true
+        const selectedButton = event.target
+        const correct = selectedButton.dataset.correct
+        setStatusClass(selectedButton, correct)
+        Array.from(answerButtons.children).forEach(button => {
+            setStatusClass(button, button.dataset.correct)
+        })
+        if(correct) {
+            answerMessage.innerHTML = ('Oh Yay! You got it right!')
+            incrementScore()
         } else {
-            endGame()
+            answerMessage.innerHTML = ('Oh No! You got it wrong!')
+            incrementWrongAnswer()
         }
-    }, 2000);
+        setTimeout(()=> {
+            currentQuestionIndex++
+            answerDisabled = false
+            // setNextQuestion()
+            if (currentQuestionIndex <= 9) {
+                setNextQuestion()
+            } else {
+                endGame()
+            }
+        }, 2000);
+    }
 }
 
 function endGame() {
