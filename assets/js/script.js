@@ -44,6 +44,10 @@ function checkAnswer(event) {
     Array.from(answerButtons.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
+    setTimeout(()=> {
+        currentQuestionIndex++
+        setNextQuestion()
+    }, 2000);
 }
 
 function setStatusClass(element, correct) {
