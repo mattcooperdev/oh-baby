@@ -66,7 +66,7 @@ function checkAnswer(event) {
         setStatusClass(button, button.dataset.correct)
     })
     if(correct) {
-        answerMessage.innerHTML = ('Yay! You got it right!')
+        answerMessage.innerHTML = ('Oh Yay! You got it right!')
         incrementScore()
     } else {
         answerMessage.innerHTML = ('Oh No! You got it wrong!')
@@ -74,8 +74,17 @@ function checkAnswer(event) {
     }
     setTimeout(()=> {
         currentQuestionIndex++
-        setNextQuestion()
+        // setNextQuestion()
+        if (currentQuestionIndex <= 9) {
+            setNextQuestion()
+        } else {
+            endGame()
+        }
     }, 3000);
+}
+
+function endGame() {
+    
 }
 
 /*Adds answer classes to answers when called*/
