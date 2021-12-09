@@ -229,10 +229,12 @@ body {
 
 .answer-btn.correct {
     background-color: var(--correct);
+    border: 1px var(--white) solid;
 }
 
 .answer-btn.incorrect {
     background-color: var(--incorrect);
+    border: 1px var(--white) solid;
 }
 
 .answer-btn:hover {
