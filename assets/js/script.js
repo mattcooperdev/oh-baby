@@ -17,17 +17,20 @@ const gameArea = document.querySelector('.game-area')
 const resultsArea = document.querySelector('.results-area')
 const modalClose = document.querySelector('.modal-close')
 
-/*Start Game that hides Main Area and calls relevant functions*/
+/*Starts Game, resets scores if any from previous games and also restarts Question index*/
 
 function runGame() {
     username = document.querySelector('.name-input').value
     document.querySelector('.name-input').classList.add('hide')
+    document.getElementById('score').innerText = 0
+    document.getElementById('incorrect').innerText = 0
     gameArea.classList.remove('hide')
     mainArea.classList.add('hide')
     randomQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     setNextQuestion()
 }
+
 /*Resets state of answer buttons and presents new random question*/
 
 function setNextQuestion() {
@@ -35,8 +38,8 @@ function setNextQuestion() {
     showQuestion(randomQuestions[currentQuestionIndex])
 }
 
-/* Clears answer buttons and creates new ones depending on how many answers are required,
-calls correct dataset if correct answer is selected*/
+/* Creates and populates answers depending on how many are required,
+calls dataset if correct answer is selected*/
 
 function showQuestion(question) {
     questionElement.innerText = question.question
@@ -62,7 +65,7 @@ function resetState() {
 }
 
 /*Checks what answer is given and adds dataset accordingly,
-gives answer message according to answer, disables answer buttons and calls next question after 3 seconds*/
+gives answer message according to answer, disables answer buttons and calls next question after 1.5 seconds*/
 
 function checkAnswer(event) {
     if (answerDisabled == false) { 
@@ -83,7 +86,6 @@ function checkAnswer(event) {
         setTimeout(()=> {
             currentQuestionIndex++
             answerDisabled = false
-            // setNextQuestion()
             if (currentQuestionIndex <= 9) {
                 setNextQuestion()
             } else {
@@ -92,6 +94,8 @@ function checkAnswer(event) {
         }, 1500);
     }
 }
+
+/*Shows results modal and pulls Username and Scores from HTML*/
 
 function endGame() {
     resultsArea.classList.remove('hide')
@@ -158,8 +162,6 @@ modalClose.addEventListener('click', () => {
 })
 
 restartBtn.addEventListener('click', () => {
-    currentScore = 0
-    currentQuestionIndex = 0
     resultsArea.classList.add('hide')
     rulesArea.classList.add('hide')
     mainArea.classList.remove('modal-bg')
