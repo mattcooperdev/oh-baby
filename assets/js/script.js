@@ -47,7 +47,7 @@ function checkAnswer(event) {
     setTimeout(()=> {
         currentQuestionIndex++
         setNextQuestion()
-    }, 2000);
+    }, 3000);
 }
 
 function setStatusClass(element, correct) {
