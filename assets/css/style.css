@@ -239,7 +239,7 @@ body {
     border: 8px;
 }
 
-.restart-btn {
+#restart-btn {
     padding: 10px;
     background-color: var(--green);
     color: var(--white);
