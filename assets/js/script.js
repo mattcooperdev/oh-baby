@@ -2,7 +2,7 @@
 
 let randomQuestions, currentQuestionIndex
 let currentScore = 0
-const restartBtn = document.getElementsByClassName('restart-btn')
+const restartBtn = document.getElementById('restart-btn')
 const questionElement = document.getElementById('question')
 const answerButtons = document.getElementById('answer-buttons')
 const answerMessage = document.getElementById('message')
@@ -93,6 +93,7 @@ function endGame() {
     startBtn.classList.add('hide')
     rulesBtn.classList.add('hide')
     nameBox.classList.add('hide')
+    document.getElementById('result-score').innerText = currentScore
 }
 
 /*Adds answer classes to answers when called*/

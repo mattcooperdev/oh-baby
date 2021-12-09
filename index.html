@@ -21,7 +21,7 @@
             <img class="logo" src="assets/images/baby-boy.png" alt="Oh Baby Logo">
         </div>
     </div>
-    <!--Rules-->
+    <!--Main Area, Rules, Results-->
     <div class="main-area flex">
         <div class="start">
             <input class="name-input" id="nickname" type="text" placeholder="Name" Required>
@@ -38,17 +38,17 @@
         <div class="results-area hide">
             <h2>Your results:</h2>
             <p>Good job!</p>
-            <p>You scored <span id="result-score"></span>out of 10</p>
+            <p>You scored <span id="result-score"></span> out of 10</p>
             <input type="email" class="email-input" placeholder="Email my results">
-            <button type="submit" class="restart-btn">Restart the Quiz</button>
+            <button type="submit" id="restart-btn">Restart the Quiz</button>
         </div>
     </div>
-    <!--Game-->
+    <!--Game and Score Areas-->
     <div class="game-area hide">
         <div class="question-area container" id="question"></div>
             <div class="answer-area" id="answer-buttons">
-                <button class="answer-btn" id="correct">Answer1</button>
-                <button class="answer-btn" id="incorrect">Answer2</button>
+                <button class="answer-btn">Answer1</button>
+                <button class="answer-btn">Answer2</button>
                 <button class="answer-btn">Answer3</button>
                 <button class="answer-btn">Answer4</button>   
             </div> 
