@@ -3,13 +3,14 @@
 let randomQuestions, currentQuestionIndex
 let currentScore = 0
 let answerDisabled = false
+let username = ""
+const nameBox = document.getElementById('nickname')
 const restartBtn = document.getElementById('restart-btn')
 const questionElement = document.getElementById('question')
 const answerButtons = document.getElementById('answer-buttons')
 const answerMessage = document.getElementById('message')
 const startBtn = document.querySelector('.start-btn')
 const rulesBtn = document.querySelector('.rules-btn')
-const nameBox = document.querySelector('.name-input')
 const mainArea = document.querySelector('.main-area')
 const rulesArea = document.querySelector('.rules-area')
 const gameArea = document.querySelector('.game-area')
@@ -19,6 +20,8 @@ const modalClose = document.querySelector('.modal-close')
 /*Start Game that hides Main Area and calls relevant functions*/
 
 function runGame() {
+    username = document.querySelector('.name-input').value
+    document.querySelector('.name-input').classList.add('hide')
     gameArea.classList.remove('hide')
     mainArea.classList.add('hide')
     randomQuestions = questions.sort(() => Math.random() - .5)
@@ -59,7 +62,7 @@ function resetState() {
 }
 
 /*Checks what answer is given and adds dataset accordingly,
-gives answe message according to answer and calls next question after 3 seconds*/
+gives answer message according to answer, disables answer buttons and calls next question after 3 seconds*/
 
 function checkAnswer(event) {
     if (answerDisabled == false) { 
@@ -99,6 +102,7 @@ function endGame() {
     rulesBtn.classList.add('hide')
     nameBox.classList.add('hide')
     document.getElementById('result-score').innerText = parseInt(document.getElementById('score').innerText)
+    document.getElementById('username').innerText = username
 }
 
 /*Adds answer classes to answers when called*/
