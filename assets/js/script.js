@@ -1,9 +1,19 @@
+//Global Variables
+
 let randomQuestions, currentQuestionIndex
 const restartBtn = document.getElementsByClassName('restart-btn')
 const questionElement = document.getElementById('question')
 const answerButtons = document.getElementById('answer-buttons')
 const answerMessage = document.getElementById('message')
+const startBtn = document.querySelector('.start-btn')
+const rulesBtn = document.querySelector('.rules-btn')
+const nameBox = document.querySelector('.name-input')
+const mainArea = document.querySelector('.main-area')
+const rulesArea = document.querySelector('.rules-area')
+const gameArea = document.querySelector('.game-area')
+const modalClose = document.querySelector('.modal-close')
 
+/*Start Game that hides Main Area and calls relevant functions*/
 
 function runGame() {
     gameArea.classList.remove('hide')
@@ -12,11 +22,15 @@ function runGame() {
     currentQuestionIndex = 0
     setNextQuestion()
 }
+/*Resets state of answer buttons and presents new random question*/
 
 function setNextQuestion() {
     resetState()
     showQuestion(randomQuestions[currentQuestionIndex])
 }
+
+/* Clears answer buttons and creates new ones depending on how many answers are required,
+calls correct dataset if correct answer is selected*/
 
 function showQuestion(question) {
     questionElement.innerText = question.question
@@ -32,12 +46,17 @@ function showQuestion(question) {
     })
 }
 
+/*Resets answer buttons and clears answer message*/
+
 function resetState() {
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild)
     }
     answerMessage.innerHTML = ''
 }
+
+/*Checks what answer is given and adds dataset accordingly,
+gives answe message according to answer and calls next question after 3 seconds*/
 
 function checkAnswer(event) {
     const selectedButton = event.target
@@ -59,6 +78,8 @@ function checkAnswer(event) {
     }, 3000);
 }
 
+/*Adds answer classes to answers when called*/
+
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
@@ -68,28 +89,28 @@ function setStatusClass(element, correct) {
     }
 }
 
+/*Clears answer classes when called*/
+
 function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('incorrect')
 }
+
+/*Adds score to correct when called*/
 
 function incrementScore() {
     let oldScore = parseInt(document.getElementById('score').innerText)
     document.getElementById('score').innerText = ++oldScore
 }
 
+/*Adds score to incorrect when called*/
+
 function incrementWrongAnswer() {
     let oldScore = parseInt(document.getElementById('incorrect').innerText)
     document.getElementById('incorrect').innerText = ++oldScore
 }
 
-const startBtn = document.querySelector('.start-btn')
-const rulesBtn = document.querySelector('.rules-btn')
-const nameBox = document.querySelector('.name-input')
-const mainArea = document.querySelector('.main-area')
-const rulesArea = document.querySelector('.rules-area')
-const gameArea = document.querySelector('.game-area')
-const modalClose = document.querySelector('.modal-close')
+// Event Listeners
 
 startBtn.addEventListener('click', runGame) 
 
