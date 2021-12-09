@@ -89,7 +89,7 @@ function checkAnswer(event) {
             } else {
                 endGame()
             }
-        }, 2000);
+        }, 1500);
     }
 }
 
@@ -150,6 +150,17 @@ rulesBtn.addEventListener('click', () => {
 })
 
 modalClose.addEventListener('click', () => {
+    rulesArea.classList.add('hide')
+    mainArea.classList.remove('modal-bg')
+    startBtn.classList.remove('hide')
+    rulesBtn.classList.remove('hide')
+    nameBox.classList.remove('hide')
+})
+
+restartBtn.addEventListener('click', () => {
+    currentScore = 0
+    currentQuestionIndex = 0
+    resultsArea.classList.add('hide')
     rulesArea.classList.add('hide')
     mainArea.classList.remove('modal-bg')
     startBtn.classList.remove('hide')
