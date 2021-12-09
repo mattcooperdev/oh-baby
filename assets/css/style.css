@@ -235,8 +235,8 @@ body {
     background-color: var(--incorrect);
 }
 
-.answer-btn:focus {
-    outline: none;
+.answer-btn:hover {
+    border: 8px;
 }
 
 .restart-btn {

@@ -11,6 +11,7 @@ const nameBox = document.querySelector('.name-input')
 const mainArea = document.querySelector('.main-area')
 const rulesArea = document.querySelector('.rules-area')
 const gameArea = document.querySelector('.game-area')
+const resultsArea = document.querySelector('.results-area')
 const modalClose = document.querySelector('.modal-close')
 
 /*Start Game that hides Main Area and calls relevant functions*/
@@ -80,11 +81,17 @@ function checkAnswer(event) {
         } else {
             endGame()
         }
-    }, 3000);
+    }, 2000);
 }
 
 function endGame() {
-    
+    resultsArea.classList.remove('hide')
+    mainArea.classList.remove('hide')
+    mainArea.classList.add('modal-bg')
+    gameArea.classList.add('hide')
+    startBtn.classList.add('hide')
+    rulesBtn.classList.add('hide')
+    nameBox.classList.add('hide')
 }
 
 /*Adds answer classes to answers when called*/
@@ -124,17 +131,17 @@ function incrementWrongAnswer() {
 startBtn.addEventListener('click', runGame) 
 
 rulesBtn.addEventListener('click', () => {
-    rulesArea.classList.remove('hide');
+    rulesArea.classList.remove('hide')
     mainArea.classList.add('modal-bg')
-    startBtn.classList.add('hide');
-    rulesBtn.classList.add('hide');
+    startBtn.classList.add('hide')
+    rulesBtn.classList.add('hide')
     nameBox.classList.add('hide')
 })
 
 modalClose.addEventListener('click', () => {
-    rulesArea.classList.add('hide');
-    mainArea.classList.remove('modal-bg');
-    startBtn.classList.remove('hide');
-    rulesBtn.classList.remove('hide');
+    rulesArea.classList.add('hide')
+    mainArea.classList.remove('modal-bg')
+    startBtn.classList.remove('hide')
+    rulesBtn.classList.remove('hide')
     nameBox.classList.remove('hide')
 })
