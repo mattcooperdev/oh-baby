@@ -93,7 +93,7 @@ function endGame() {
     startBtn.classList.add('hide')
     rulesBtn.classList.add('hide')
     nameBox.classList.add('hide')
-    document.getElementById('result-score').innerText = currentScore
+    document.getElementById('result-score').innerText = parseInt(document.getElementById('score').innerText)
 }
 
 /*Adds answer classes to answers when called*/
