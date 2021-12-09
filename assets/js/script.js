@@ -48,8 +48,10 @@ function checkAnswer(event) {
     })
     if(correct) {
         answerMessage.innerHTML = ('Yay! You got it right!')
+        incrementScore()
     } else {
         answerMessage.innerHTML = ('Oh No! You got it wrong!')
+        incrementWrongAnswer()
     }
     setTimeout(()=> {
         currentQuestionIndex++
@@ -72,11 +74,13 @@ function clearStatusClass(element) {
 }
 
 function incrementScore() {
-
+    let oldScore = parseInt(document.getElementById('score').innerText)
+    document.getElementById('score').innerText = ++oldScore
 }
 
 function incrementWrongAnswer() {
-
+    let oldScore = parseInt(document.getElementById('incorrect').innerText)
+    document.getElementById('incorrect').innerText = ++oldScore
 }
 
 const startBtn = document.querySelector('.start-btn')
@@ -86,7 +90,6 @@ const mainArea = document.querySelector('.main-area')
 const rulesArea = document.querySelector('.rules-area')
 const gameArea = document.querySelector('.game-area')
 const modalClose = document.querySelector('.modal-close')
-// const nextBtn = document.querySelector('next-btn')
 
 startBtn.addEventListener('click', runGame) 
 
