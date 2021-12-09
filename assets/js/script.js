@@ -2,6 +2,7 @@ let randomQuestions, currentQuestionIndex
 const restartBtn = document.getElementsByClassName('restart-btn')
 const questionElement = document.getElementById('question')
 const answerButtons = document.getElementById('answer-buttons')
+const answerMessage = document.getElementById('message')
 
 
 function runGame() {
@@ -35,6 +36,7 @@ function resetState() {
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild)
     }
+    answerMessage.innerHTML = ''
 }
 
 function checkAnswer(event) {
@@ -44,6 +46,11 @@ function checkAnswer(event) {
     Array.from(answerButtons.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
+    if(correct) {
+        answerMessage.innerHTML = ('Yay! You got it right!')
+    } else {
+        answerMessage.innerHTML = ('Oh No! You got it wrong!')
+    }
     setTimeout(()=> {
         currentQuestionIndex++
         setNextQuestion()
