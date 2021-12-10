@@ -45,14 +45,15 @@ This is the main marketing website for DJ Matt Cooper. It is designed to be resp
 *   ### Wireframes
 
     -   Home Page Wireframe - 
-    ![Home Page Wireframe](assets/md-images/mc-browser.png)
+    ![Home Page Wireframe](assets/md-images/desktop-home.png)
+
+    -   Home Page Wireframe - 
+    ![Game Page Wireframe](assets/md-images/game-page-desktop.png)
 
     -   Mobile Wireframe - 
-
-        ![Mobile Wireframe](assets/md-images/mc-mobile.png)
+    ![Mobile Wireframe](assets/md-images/game-page-mobile.png)
 
     -   Thank you page Wireframe - 
-
     ![Thank you Wireframe](assets/md-images/mc-thankyou.png) 
 
     As you can see from the Wireframes, the initial layout of the Site was slightly different. The evolution of the layout came about through testing and understanding the UX as the build developed:

@@ -360,6 +360,10 @@ body {
         height: 4.5rem;
     }
 
+    .name-input, .start-btn, .rules-btn {
+        margin: 10px;
+    }
+
     .game-area {
         height: 70vh;
     }
