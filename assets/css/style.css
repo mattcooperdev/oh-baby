@@ -276,13 +276,18 @@ body {
 
 /*for landscape view*/
 
-@media only screen and (max-width: 900px), (max-height:700px) {
+@media only screen and (max-height:700px) {
 
     .heading {
         font-size: 4rem;
     }
     .logo {
         height: 4rem;
+    }
+
+    .name-input, .start-btn, .rules-btn {
+        margin: 10px;
+        height: auto;
     }
 
     .score-area {

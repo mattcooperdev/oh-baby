@@ -265,7 +265,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--   The CSS underline animation came from here: (https://paulund.co.uk/css-animation-link-underline)
+-   The idea for the JavaScript functionality was inspired by a video by [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified)
 
 
 ### Content
@@ -274,9 +274,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Media
 
--   All Youtube videos are used after permission granted from the necessary labels. Music content owned by Matt Cooper. 
-- Hero image owned by Matt Cooper. Images for Gigs and Connect Sections taken royalty-free from
-[Pexels](https://pexels.com)
+-   Icons and logo were taken from [Font Awesome](https://fontawesome.com/)
+- Background cloud image was taken royalty-free from [Pexels](https://pexels.com)
 
 ### Acknowledgements
 
