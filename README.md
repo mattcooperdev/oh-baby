@@ -28,8 +28,10 @@ This is an intercative baby quiz called Oh Baby! It is designed to be responsive
 
 -   ### Design
     -   #### Colour Scheme
-        -   The two main colours used are black (#1f1f1f) and white (#fffffffa), with a red (#f11616) used as focus in the anchor and form inputs. This contrast is passes WCGA AA and AAA requirements.
-        ![wcga](assets/md-images/contrast-checker.png)
+        -   The colour palette used (see below) is a playful, light palette that emphasises the playful nature of the site. All colours pass through AA and AAA accessibility for their respective requirements of text or background, however a change had to be introduced with the correct and incorrect answer classes as the off-white colour used for the text was failing validity. Changing this to a darker colour passed all necessary validations. 
+
+        ![Colour Scheme](assets/md-images/contrast-checker.png)
+        
     -   #### Layout
         -  A simple page layout gives this site a clean, easy-to-use feel which creates the desired effect for the game. As the content focus is a basic quiz about babies, the uncluttered nature gives a sense of infancy and purity, like babies!
     -   #### Typography
