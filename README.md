@@ -36,7 +36,7 @@ This is the main marketing website for DJ Matt Cooper. It is designed to be resp
     -   #### Layout
         -  A simple scrolling page gives this site a clean, minimalist feel which creates the desired effect for the Artist. As the content focus is music, the lack of text deemed several pages to be uneccesary. 
     -   #### Typography
-        -   The Roboto and Radjhani fonts are the chosen fonts used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Roboto is a clean, futuristic style font that suits the styling of the website, with Radjhani being suggested by Google fonts as a contrasting pair to use along with it. 
+        -   The Shadows into Light Too and Amatic SC fonts are the chosen fonts used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Both fonts have a playful, childlike feeling to them that suits the ethos of the page.
     -   #### Imagery
         -   Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, clean aesthetic that pertains to the anonymity of both the artist and the underground electronic music scene.
 
@@ -56,7 +56,7 @@ This is the main marketing website for DJ Matt Cooper. It is designed to be resp
     -   Results Wireframe - 
     ![Results Wireframe](assets/md-images/desktop-results.png) 
 
-    Due to the simplicity of the Site, no real changes needed to be made from the inception of the Wireframes. 
+    Due to the simplicity of the Site, no real changes neededed to be made from the inception of the Wireframes other than the removal of the email submit in the Results modal that I removed due to time constraints, which could be implemented at a later date. 
 
 ---
 
@@ -193,7 +193,7 @@ The site was checked with Google Developments' Lighthouse tool. Below are the re
 ### Further Testing
 
 -   The Website was tested on Google Chrome, Firefox, Microsoft Edge and Safari browsers.
--   The Website was tested through Responsinator [(results here)](https://www.responsinator.com/?url=https%3A%2F%2Fyescoops.github.io%2Fdjmattcooper%2F) to check any responsiveness issues. 
+-   The Website was tested through Responsinator [(results here)](http://www.responsinator.com/?url=https%3A%2F%2Fyescoops.github.io%2Foh-baby%2F) to check any responsiveness issues. 
 -   The website was viewed on a variety of devices such as Desktop, Apple Laptop, Oppo G13 mobile, iPhone 8 & iPhoneX.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
