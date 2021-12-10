@@ -56,15 +56,7 @@ This is the main marketing website for DJ Matt Cooper. It is designed to be resp
     -   Results Wireframe - 
     ![Results Wireframe](assets/md-images/desktop-results.png) 
 
-    As you can see from the Wireframes, the initial layout of the Site was slightly different. The evolution of the layout came about through testing and understanding the UX as the build developed:
-
-    - The addition of a separate area for Gig information on the Desktop view allowed more focus to the Connect form and the desire for users to input their data. 
-
-    - The removal of the email address in the Connect section so Users will be more drawn to use the form. 
-
-    - The cursor scrolling of the iframes in the mobile view of the releases section due to limitations in the CSS to do this in a responsive way. 
-
-    - The use of a hamburger icon for the navbar menu when on smaller screens due to the limitations in CSS. 
+    Due to the simplicity of the Site, no real changes needed to be made from the inception of the Wireframes. 
 
 ---
 
@@ -109,11 +101,12 @@ This is the main marketing website for DJ Matt Cooper. It is designed to be resp
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries & Programs Used
 
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Roboto' and 'Radjhani' fonts into the style.css file which is used on all pages throughout the project.
+    - Google fonts were used to import the 'Shadows into Light Too' and 'Amatic SC' fonts into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 1. [Git:](https://git-scm.com/)
@@ -207,7 +200,8 @@ The site was checked with Google Developments' Lighthouse tool. Below are the re
 
 ### Known Bugs
 
--   On a mobile device in landscape view, the anchor text within the cover text does not resize correctly. 
+-   On screen sizes with a height greater than 935px, the background image does not cover.
+-   When the rules modal is called, the background image shrinks.
 
 ---
   
