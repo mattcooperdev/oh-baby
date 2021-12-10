@@ -53,8 +53,8 @@ This is the main marketing website for DJ Matt Cooper. It is designed to be resp
     -   Mobile Wireframe - 
     ![Mobile Wireframe](assets/md-images/game-page-mobile.png)
 
-    -   Thank you page Wireframe - 
-    ![Thank you Wireframe](assets/md-images/mc-thankyou.png) 
+    -   Results Wireframe - 
+    ![Results Wireframe](assets/md-images/desktop-results.png) 
 
     As you can see from the Wireframes, the initial layout of the Site was slightly different. The evolution of the layout came about through testing and understanding the UX as the build developed:
 
@@ -131,9 +131,9 @@ This is the main marketing website for DJ Matt Cooper. It is designed to be resp
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate all pages of the project to ensure there were no syntax errors in there. 
 
--   W3C Markup Validator - [Results for Main Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fyescoops.github.io%2Fdjmattcooper%2F) - [Results for Thankyou Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fyescoops.github.io%2Fdjmattcooper%2Fthankyou.html)
+-   W3C Markup Validator - [Results for Main Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fyescoops.github.io%2Foh-baby%2F) 
 
--   W3C CSS Validator - [Results for Main Page](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyescoops.github.io%2Fdjmattcooper%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - [Results for Thankyou Page](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyescoops.github.io%2Fdjmattcooper%2Fthankyou.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+-   W3C CSS Validator - [Results for Main Page](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyescoops.github.io%2Foh-baby%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ## Accessibility Testing
 
@@ -147,11 +147,7 @@ The site was checked with Google Developments' Lighthouse tool. Below are the re
 
 - Main Page
 
-![Lighthouse for Main Page](assets/md-images/mc-lighthouse.png)
-
-- Thankyou Page
-
-![Lighthouse for Thankyou](assets/md-images/mc-lighthouse2.png)
+![Lighthouse for Main Page](assets/md-images/lighthouse.png)
 
 ---
 

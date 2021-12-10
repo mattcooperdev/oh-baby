@@ -14,6 +14,7 @@ const rulesBtn = document.querySelector('.rules-btn');
 const mainArea = document.querySelector('.main-area');
 const rulesArea = document.querySelector('.rules-area');
 const gameArea = document.querySelector('.game-area');
+const footer = document.querySelector('.footer-container');
 const resultsArea = document.querySelector('.results-area');
 const modalClose = document.querySelector('.modal-close');
 
@@ -151,6 +152,7 @@ rulesBtn.addEventListener('click', () => {
     startBtn.classList.add('hide');
     rulesBtn.classList.add('hide');
     nameBox.classList.add('hide');
+    footer.classList.add('hide');
 });
 
 modalClose.addEventListener('click', () => {
@@ -159,6 +161,7 @@ modalClose.addEventListener('click', () => {
     startBtn.classList.remove('hide');
     rulesBtn.classList.remove('hide');
     nameBox.classList.remove('hide');
+    footer.classList.remove('hide');
 });
 
 restartBtn.addEventListener('click', () => {
