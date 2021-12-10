@@ -20,8 +20,9 @@
 
 
 body {
-    background: url(../images/Cute_Clouds_Pattern_on_Blue_Background_generated.jpg) no-repeat center center;
+    background: url(../images/Cute_Clouds_Pattern_on_Blue_Background_generated.jpg) center center;
     background-color: var(--white);
+    height: 100%;
     font-family: 'Shadows Into Light Two', sans-serif;
     color: var(--green);
     text-align: center;
