@@ -284,14 +284,9 @@ body {
 
 /*Media queries */
 
-@media only screen and (max-width: 700px) {
+/*for landscape view*/
 
-    .answer-area {
-    grid-template-columns: 1fr;
-    }
-}
-
-@media only screen and (max-width: 800px), (max-height:700px) {
+@media only screen and (max-width: 900px), (max-height:700px) {
 
     .heading {
         font-size: 4rem;
@@ -327,12 +322,30 @@ body {
     }
 }
 
+/*drops to one answer button per column on smaller screens*/
+
+@media only screen and (max-width: 700px) {
+
+    .answer-area {
+    grid-template-columns: 1fr;
+    }
+}
+
+/*media queries for small mobile devices*/
 
 @media only screen and (max-width: 414px) {
+
+    .heading {
+        font-size: 4.5rem;
+    }
+    .logo {
+        height: 4.5rem;
+    }
 
     .question-area {
         padding: 10% 0;
         width: 100%;
+        font-size: 1.1rem;
     }
 
     .question-area span {
@@ -347,17 +360,6 @@ body {
         display: block;
         margin: 0 auto;
     }
-  
-}
-
-@media only screen and (max-width: 360px) {
-
-    .heading {
-        font-size: 4.5rem;
-    }
-    .logo {
-        height: 4.5rem;
-    }
     
     .name-input, .start-btn, .rules-btn {
         margin: 10px;
@@ -365,11 +367,6 @@ body {
 
     .game-area {
         height: 70vh;
-    }
-
-    .question-area {
-        padding: 10px 0;
-        font-size: 1.1rem;
     }
 
     .answer-btn {
