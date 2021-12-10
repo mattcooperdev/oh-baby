@@ -15,13 +15,14 @@
     --peach: #ffddd2;
     --correct: #83c5be;
     --incorrect: #e29578;
+    --answer: #00454c;
 }
 
 
 body {
     background: url(../images/Cute_Clouds_Pattern_on_Blue_Background_generated.jpg) no-repeat center center;
     background-color: var(--white);
-    font-family: Shadows Into Light Two, sans-serif;
+    font-family: 'Shadows Into Light Two', sans-serif;
     height: 100vh;
     color: var(--green);
     text-align: center;
@@ -50,7 +51,7 @@ body {
 }
 
 .heading {
-    font-family: Amatic SC, sans-serif;
+    font-family: 'Amatic SC', sans-serif;
     text-align: center;
     font-size: 8rem;
     padding: 5px;
@@ -159,7 +160,7 @@ body {
 }
 
 .question-area {
-    width: 50%;
+    width: 60%;
     font-size: 2rem;
     margin: auto;
     padding: 50px 0;
@@ -167,7 +168,6 @@ body {
 
 .answer-area {
     display: grid;
-    grid-column: 2;
     grid-gap: 10px;
 }
 
@@ -177,25 +177,28 @@ body {
     font-size: 1.2rem;
 }
 
-.correct, #correct {
+.scores {
+    display: inline-block;
+    padding: 25px;
+}
+
+/*Classes for scores*/
+
+#score {
     color: var(--correct);
     font-weight: bold;
 }
 
-.incorrect, #incorrect {
+#incorrect {
     color: var(--incorrect);
     font-weight: bold;
 }
 
 #message {
-    font-family: Amatic SC, sans-serif;
+    font-family: 'Amatic SC', sans-serif;
     font-size: 2rem;
     font-weight: bold;
-}
-
-.scores {
-    display: inline-block;
-    padding: 25px;
+    padding-top: 0.75rem;
 }
 
 /*Buttons */
@@ -222,6 +225,7 @@ body {
     border: 1px var(--white) solid;
     border-radius: 5px;
     font-size: 1.5rem;
+    padding-top: 0.75rem;
     font-family: inherit;
     letter-spacing: 1.2px;
     cursor: pointer;
@@ -229,11 +233,13 @@ body {
 
 .answer-btn.correct {
     background-color: var(--correct);
+    color: var(--answer);
     border: 1px var(--white) solid;
 }
 
 .answer-btn.incorrect {
     background-color: var(--incorrect);
+    color: var(--answer);
     border: 1px var(--white) solid;
 }
 
