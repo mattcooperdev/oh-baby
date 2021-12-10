@@ -1,12 +1,12 @@
-![mc logo](assets/images/mc-logo.png) 
+![mc logo](assets/md-images/oh-baby-logo.png) 
 
-[View the live project here.](https://yescoops.github.io/djmattcooper/)
+[View the live project here.](https://yescoops.github.io/oh-baby/)
 
-This is the main marketing website for DJ Matt Cooper. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for current and potential fans and employers.
+This is an intercative baby quiz called Oh Baby! It is designed to be responsive and accessible on a range of devices, making it easy to navigate for new and returning players.
 
 ---
 
-![device screens](assets/md-images/mc-responsive.png)
+![device screens](assets/md-images/responsive.png)
 
 ---
 
@@ -16,29 +16,26 @@ This is the main marketing website for DJ Matt Cooper. It is designed to be resp
 
     -   #### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about DJ Matt Cooper.
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-        3. As a First Time Visitor, I want to look for examples of the style of music Matt plays and see if they have legitimacy. I also want to locate his social media links to see their followings on social media to guage their popularity and activity.
-
+        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about babies.
+        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to play the quiz.
+        
     -   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to find information about his gig diary.
-        2. As a Returning Visitor, I want to find the best way to get in contact with Matt with any booking or production requests I may have.
-        3. As a Returning Visitor, I want to find community links.
+        1. As a Returning Visitor, I want to play the quiz again.
 
     -   #### Frequent User Goals
-        1. As a Frequent User, I want to check to see if there are any newly added media (such as releases or mixes) or gigs.
+        1. As a Frequent User, I want to see if I can improve on my previous attempts of the quiz and introduce it to other players. 
 
 -   ### Design
     -   #### Colour Scheme
         -   The two main colours used are black (#1f1f1f) and white (#fffffffa), with a red (#f11616) used as focus in the anchor and form inputs. This contrast is passes WCGA AA and AAA requirements.
         ![wcga](assets/md-images/contrast-checker.png)
     -   #### Layout
-        -  A simple scrolling page gives this site a clean, minimalist feel which creates the desired effect for the Artist. As the content focus is music, the lack of text deemed several pages to be uneccesary. 
+        -  A simple page layout gives this site a clean, easy-to-use feel which creates the desired effect for the game. As the content focus is a basic quiz about babies, the uncluttered nature gives a sense of infancy and purity, like babies!
     -   #### Typography
         -   The Shadows into Light Too and Amatic SC fonts are the chosen fonts used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Both fonts have a playful, childlike feeling to them that suits the ethos of the page.
     -   #### Imagery
-        -   Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, clean aesthetic that pertains to the anonymity of both the artist and the underground electronic music scene.
+        -   Imagery is important. The large, background image of cartoon clouds used throughout highlights the playful and easy-going nature of the game. 
 
 ---
 
@@ -66,35 +63,32 @@ This is the main marketing website for DJ Matt Cooper. It is designed to be resp
 
 -   Interactive elements
 
-### Home Section
--   Identifies the purpose of the page and gives a clear understanding to the visitor who DJ Matt Cooper is. A striking black and white hero image gives an anonymity to the artist which identifies with his work in the Underground music scene. 
-- An opaque background was later given to the cover text which helps with contrast issues with the hero image when viewed on smaller screens. 
+### Home Area
+-   Identifies the purpose of the page and gives a clear understanding to the visitor what the purpose of the page is. An animated cloud scene, along with the simple button layout, highlights the fun, naive nature of the quiz. 
+- An input field is there for a User to put their name in, which is then presented to them at the end of the game in the results modal. This gives the game a personal touch, enticing them to come back at a later date. 
 
-![Home section](assets/md-images/mc-home.png)
+![Home Area](assets/md-images/home.png)
 
-### Releases Section
--   Brief text is given describing the style of music that the artist makes, along with a short history of some of his achievements. This is kept simple to draw in and intrigue the visitor. 
-- Four examples of music are given via Youtube videos. The ability for the visitor to then visit Youtube externally to the Site allows the visitor to explore more of the Artists' work if required. 
+### Rules Modal
 
-![Releases section](assets/md-images/mc-releases.png)
+-   Clicking on this the User will be presented with the rules of the quiz. The use of a star icon rather than bullet points ties in with the baby-themed nature of what they are about to play. (Gold star anyone??)
 
-### Gigs Section
-- This shows a list of the artists gigs for the upcoming three months. Roboto font is used for the dates to highlight to the visitor their upcoming activity. 
-- An abstract black and white photo of a nightclub environment is used for the background to evoke the experience of being at one of these gigs. 
+![Rules Modal](assets/md-images/rules.png)
 
-![Gigs section](assets/md-images/mc-gigs.png)
+### Game Area
+-   The simple layout of a question, four answer buttons and a score tally ties in with the baby-based nature of the quiz. 
 
-### Connect Section
-- The use of the word 'Connect' rather than 'Contact' gives a genuine sense of community and connection with the Artist, making the UX more personable and trusted. 
-- The form carries the same text over from the rest of the Site, with a red color used as hover effects over the text input along with the 'connect' submit button. This ties to the animation used for the 'Reach Out' button in the Home section, bringing with it a sense of fluidity and need to fulfill the task of getting in touch.
+![Game Area](assets/md-images/game.png)
 
-![Connect Section](assets/md-images/mc-connect.png)
+- When an answer is input, the User will get visual clarification of their answer with the relevant colours (the text will change colour to suit accessibility). If they are colourblind and cannot distinguish between red and green, the User will also get a message appear on the screen to let them know if they got it right or wrong. 
 
-### Footer
+![Answer](assets/md-images/answer.png)
 
-- Cleanly-styled footer with minimal outlined social links from Font Awesome draw the visitor to go to the Artist's social pages. No text was used here as the symbols clearly indicate what their purpose is, however, they are aria-labelled for accessibility validation. 
+### Results Modal
+- Once the game is completed and all 10 questions are answered, a results modal will show. 
+- If a name has been input at the start of the game, they will see that appear after "Good job ___ !. Their score will also be displayed, with the option to restart the quiz if they wish.  
 
-![Footer](assets/md-images/mc-footer.png)
+![Results Modal](assets/md-images/results.png)
 
 
 ### Languages Used
@@ -122,17 +116,19 @@ This is the main marketing website for DJ Matt Cooper. It is designed to be resp
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate all pages of the project to ensure there were no syntax errors in there. 
+The W3C Markup Validator and CSS Validator Services were used to validate all pages of the project to ensure there were no syntax errors in there. JSHint was used to validate the Java Script with no errors highlighted. 
 
 -   W3C Markup Validator - [Results for Main Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fyescoops.github.io%2Foh-baby%2F) 
 
 -   W3C CSS Validator - [Results for Main Page](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyescoops.github.io%2Foh-baby%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
+-   JSHint 
+
 ## Accessibility Testing
 
 The site was throughly checked for any possible accessibility issues. Below is the [WAVE](https://wave.webaim.org/) report:
 
-![Wave Report](assets/md-images/mc-wave.png)
+![Wave Report](assets/md-images/wave.png)
 
 ## Performance
 
@@ -148,30 +144,24 @@ The site was checked with Google Developments' Lighthouse tool. Below are the re
 
 -   #### First Time Visitor Goals
 
-    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about DJ Matt Cooper.
+    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about babies.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the section of their choice. The use of a clean underline animation when hovering over a link emphasises where the User is. Underneath there is a Hero Image with text about the Site and a "Reach Out" Call to action button.
-        2. The main points are made immediately with the hero image and associated text.
-        3. The user has two options, click the animated call to action button (which highlights in red to emphasise the link to the connect form) or scroll down, both of which will lead to the same place, to learn more about the Artist.
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable page, with a striking heading, logo and background that identify that this is a baby theme. 
+        2. The main points are made immediately with the 'Start' and 'Rules' buttons.
+        3. The user has two options, clicking the 'Start' and 'Rules' buttons, either of which gives them an understanding of what the purpose of the Site is. 
 
-    2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
+    2. As a First Time Visitor, I want to be able to easily navigate throughout the site to play the quiz.
 
-        1. The site has been designed to be fluid and never to entrap the user. At the top of the page there is a clean navigation bar, each link describes what section they will end up at clearly. The viewport height has also been set in such a way that the header of the following section is always visible, as to draw the visitor in to exploring the page further. 
-        2. At the bottom of the page there is a redirection call to action in the form of social links to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
-        3. In the Connect section, after a form response is submitted, the page refreshes and the user is brought to a thank you page, allowing them to return to the top of the home page via a link or via the navbar. For sylistic purposes, the from method was set from "POST" to "GET" so you can see the styling of the Thankyou page. This renders the form from collating inputted data and would need to be resolved before deployment. 
-
-    3. As a First Time Visitor, I want to look for examples of the style of music Matt plays and see if they have legitimacy. I also want to locate his social media links to see their followings on social media to guage their popularity and activity.
-        1. By clicking the releases link in the navbar, or scrolling to the releases section after viewing the hero image and related text, the visitor will be able to click any of the YouTube videos to get an idea of the music the artist has released.  
-        2. Once the new visitor has read the cover text, they will notice the 'Reach Out' link which takes them to the Connect and social section.
-        3. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-    
+        1. The site has been designed to be fluid and never to entrap the user. As a first user you will tend to go to the 'Rules' section first to gain an understanding of what the game entails. If not, they will click in to the Game and be presented with the first question in the Game Area.
+        2. The user is unable to progress through the quiz without selecting an answer. The game will automatically move on to the next question after 1.5 seconds when an answer is submitted without the need to make any more clicks by the User. 
+         
 
 -   #### Returning Visitor Goals
 
-    1. As a Returning Visitor, I want to find information about Matts gig diary.
+    1. As a Returning Visitor, I want to play the quiz again.
 
-        1. These are clearly shown in the gigs section of the page.
-        2. Immediately below this information is the connect section where a User can reach out for more information. 
+        1. The user can go straight into a new game. The questions are randomised so the User will not experience the same questions on a second play. 
+        2. At the end of the quiz the User is presented with their results and the option to restart the quiz. The idea of giving the User their results gives a light sense of competition. 
 
     2. As a Returning Visitor, I want to find the best way to get in contact with Matt with any booking or production requests I may have.
 
@@ -185,9 +175,9 @@ The site was checked with Google Developments' Lighthouse tool. Below are the re
 
 -   #### Frequent User Goals
 
-    1. As a Frequent User, I want to check to see if there are any newly added media (such as releases or mixes) or gigs.
+    1. As a Frequent User, I want to see if I can improve on my previous attempts of the quiz and introduce it to other players. 
 
-        1. The user would already be comfortable with the website layout and can easily click relative links to the releases, gigs or social sections.
+        1. The user would already be comfortable with the website layout and can easily click the necessary buttons to play the game again.
 
 
 ### Further Testing
@@ -195,13 +185,14 @@ The site was checked with Google Developments' Lighthouse tool. Below are the re
 -   The Website was tested on Google Chrome, Firefox, Microsoft Edge and Safari browsers.
 -   The Website was tested through Responsinator [(results here)](http://www.responsinator.com/?url=https%3A%2F%2Fyescoops.github.io%2Foh-baby%2F) to check any responsiveness issues. 
 -   The website was viewed on a variety of devices such as Desktop, Apple Laptop, Oppo G13 mobile, iPhone 8 & iPhoneX.
--   A large amount of testing was done to ensure that all pages were linking correctly.
+-   A large amount of testing was done to ensure that functionality was working as expected.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
-### Known Bugs
+### Known Bugs / Improvements
 
--   On screen sizes with a height greater than 935px, the background image does not cover.
--   When the rules modal is called, the background image shrinks.
+-   In certain landscape dimensions the game area does not fit into the viewport and scrolling is required. 
+-   I would like to implement further quizzes in future where a User can select a particular age bracket they wanted to focus their quiz on (eg. newborns, 3-6 months, toddlers).
+-   The ability to send the User their results by inputting their email address in the results modal at the end of the Quiz would be another feature I would like to add. In turn, this data could be used to entice the User back to the site with follow up emails and further promotional messages as the site grew. 
 
 ---
   
