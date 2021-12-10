@@ -1,3 +1,4 @@
+
 //Global Variables
 
 let randomQuestions, currentQuestionIndex;
