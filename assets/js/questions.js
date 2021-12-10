@@ -49,7 +49,7 @@ const questions = [
     },
 
     {
-        question: 'How many people does the average child share his/her birthday with?',
+        question: 'How many people does the average child share their birthday with?',
         answers: [
             {text: '2 Billion', correct: false},
             {text: '225 Million', correct: false},
@@ -130,7 +130,7 @@ const questions = [
     {
         question: 'What can a baby do up until seven months that an adult cannot?',
         answers: [
-            {text: 'Cross their eyes whilst sticking out their tongue', correct: false},
+            {text: 'Cross their eyes and stick out their tongue', correct: false},
             {text: 'Lick their elbow', correct: false},
             {text: 'Breathe and swallow simultaneously', correct: true},
             {text: 'Sneeze with their eyes open', correct: false}
@@ -148,7 +148,7 @@ const questions = [
     },
 
     {
-        question: "A newborn babys stomach is the size of a...",
+        question: "A newborn babys stomach is the size of ...",
         answers: [
             {text: 'A marble', correct: true},
             {text: 'A ping pong ball', correct: false},

@@ -274,7 +274,6 @@ body {
     text-align: center;
     justify-content: center;
     max-width: 1400px;
-
 }
 
 .social-networks>li {
@@ -361,9 +360,6 @@ body {
     .logo {
         height: 4.5rem;
     }
-}
-
-@media (max-width: 320px) {
 
     .game-area {
         height: 70vh;
@@ -381,8 +377,8 @@ body {
 
     .answer-btn {
         font-size: 0.8rem;
-        height: 40px;
-        padding-top: 0.5rem;
+        height: 42px;
+
     }
 
     #message {
