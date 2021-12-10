@@ -129,16 +129,6 @@ body {
     margin-bottom: 20px;
 } 
 
-.email-input {
-    font-size: 1rem;
-    width: 60%;
-    height: auto;
-    border: var(--peach) 2px solid;
-    border-radius: 5px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 .hide {
     display: none;
 }
