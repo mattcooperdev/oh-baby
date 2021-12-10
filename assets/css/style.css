@@ -122,7 +122,8 @@ body {
 
 .name-input {
     font-size: 2rem;
-    width: 40%;
+    width: 60%;
+    min-width: 60%;
     height: 70px;
     border: var(--peach) 2px solid;
     border-radius: 5px;
@@ -260,9 +261,38 @@ body {
     cursor: pointer;
 }
 
+/*Footer*/
+
+.footer-container {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    min-height: 40px;
+    bottom: 0;
+}
+
+.social-networks {
+    text-align: center;
+    justify-content: center;
+    max-width: 1400px;
+
+}
+
+.social-networks>li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 300%;
+    margin: 1%;
+    padding: 1rem;
+    color: var(--green);
+}
+
 /*Media queries */
 
 @media (max-width: 500px) {
+
     .heading {
         font-size: 6rem;
     }
@@ -279,10 +309,27 @@ body {
         display: block;
         padding: 5px;
     }
+
+    .question-area {
+        font-size: 1.5rem;
+    }
+
+    #message {
+        font-size: 1.5rem;
+    }
+
+    .answer-btn {
+        font-size: 1rem;
+    }
+
+    .social-networks i {
+        font-size: 200%;
+    }
 }
 
 
 @media (max-width: 414px) {
+
     .controls-area {
         width: 100%;
     }
@@ -308,6 +355,7 @@ body {
 }
 
 @media (max-width: 360px) {
+
     .heading {
         font-size: 4.5rem;
     }
@@ -317,6 +365,7 @@ body {
 }
 
 @media (max-width: 320px) {
+
     .game-area {
         height: 70vh;
     }
@@ -328,34 +377,23 @@ body {
 
     .question-area {
         padding: 10px 0;
+        font-size: 1.1rem;
     }
 
+    .answer-btn {
+        font-size: 0.8rem;
+        height: 40px;
+        padding-top: 0.5rem;
+    }
+
+    #message {
+        font-size: 1.2rem;
+    }
+
+    .score-area {
+        margin: auto;
+        width: 60%;
+        font-size: 1rem;
+    }
 }
 
-/*Footer*/
-
-.footer-container {
-    position: fixed;
-    width: 100%;
-    height: auto;
-    bottom: 0;
-}
-
-.social-networks {
-    /* display: flex; */
-    text-align: center;
-    justify-content: center;
-    max-width: 1400px;
-
-}
-
-.social-networks>li {
-    display: inline;
-}
-
-.social-networks i {
-    font-size: 300%;
-    margin: 1%;
-    padding: 1rem;
-    color: var(--green);
-}
