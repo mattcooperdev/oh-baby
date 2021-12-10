@@ -284,7 +284,7 @@ body {
 
 /*Media queries */
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
 
     .heading {
         font-size: 6rem;
@@ -321,7 +321,7 @@ body {
 }
 
 
-@media (max-width: 414px) {
+@media only screen and (max-width: 414px) {
 
     .question-area {
         padding: 10% 0;
@@ -343,7 +343,7 @@ body {
   
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
 
     .heading {
         font-size: 4.5rem;
@@ -381,55 +381,3 @@ body {
     }
 }
 
-/* @media only screen and (orientation: landscape) {
-
-    .heading {
-        font-size: 3rem;
-    }
-    .logo {
-        height: 3rem;
-
-    }
-    .name-input, .start-btn, .rules-btn {
-        margin: 10px;
-        height: 48px;
-        font-size: 1rem;
-    }
-
-    .main-area {
-        height: 60vh;
-    }
-
-    .game-area {
-        height: 80vh;
-    }
-
-    .question-area {
-        padding: 10px 0;
-        font-size: 1.1rem;
-    }
-
-    .answer-btn {
-        font-size: 0.8rem;
-        height: 42px;
-    }
-
-    #message {
-        font-size: 1.2rem;
-    }
-
-    .score-area {
-        margin: auto;
-        width: 60%;
-        font-size: 1rem;
-    }
-
-    .social-networks i {
-        font-size: 200%;
-    }
-
-    .rules-area, .results-area {
-        height: 70%;
-        min-width: 70vw;
-    }
-} */
