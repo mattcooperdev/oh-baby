@@ -106,6 +106,7 @@ function endGame() {
     startBtn.classList.add('hide');
     rulesBtn.classList.add('hide');
     nameBox.classList.add('hide');
+    footer.classList.add('hide');
     document.getElementById('result-score').innerText = parseInt(document.getElementById('score').innerText);
     document.getElementById('username').innerText = username;
 }
