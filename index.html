@@ -14,66 +14,64 @@
 </head>
 <body>
     <!--Heading and Logo-->
-    <div class="container">
-        <div class="header">
-            <div class="container flex">
-                <h1 class="heading">Oh Baby!</h1>
-                <img class="logo" src="assets/images/baby-boy.png" alt="Oh Baby Logo made by Freepik.com">
-            </div>
+    <div class="header">
+        <div class="container flex">
+            <h1 class="heading">Oh Baby!</h1>
+            <img class="logo" src="assets/images/baby-boy.png" alt="Oh Baby Logo made by Freepik.com">
         </div>
-        <!--Main Area, Rules, Results-->
-        <div class="main-area flex">
-            <div class="start">
-                <input class="name-input" id="nickname" type="text" placeholder="Name">
-                <label for="nickname"></label>
-                <button class="start-btn">Start</button>
-                <button class="rules-btn">Rules</button>
-            </div>
-            <div class="rules-area hide">
-                <h2>Rules:</h2>
-                <p><i class="far fa-star"></i>You have 10 questions to answer</p>
-                <p><i class="far fa-star"></i>Only your first answer will be accepted</p>
-                <p><i class="far fa-star"></i>You cannot move on to the next question until an answer is given</p>
-                <span class="modal-close">X</span>
-            </div>
-            <div class="results-area hide">
-                <h2>Your results:</h2>
-                <p>Good job <span id="username"></span> !</p>
-                <p>You scored <span id="result-score"></span> out of 10</p>
-                <button type="submit" id="restart-btn">Restart the Quiz</button>
-            </div>
+    </div>
+    <!--Main Area, Rules, Results-->
+    <div class="main-area flex">
+        <div class="start">
+            <input class="name-input" id="nickname" type="text" placeholder="Name">
+            <label for="nickname" class="sr-only">Name Input</label>
+            <button class="start-btn">Start</button>
+            <button class="rules-btn">Rules</button>
         </div>
-        <!--Game and Score Areas-->
-        <div class="game-area hide">
-            <div class="question-area container" id="question"></div>
-                <div class="answer-area" id="answer-buttons">
-                    <button class="answer-btn">Answer1</button>
-                    <button class="answer-btn">Answer2</button>
-                    <button class="answer-btn">Answer3</button>
-                    <button class="answer-btn">Answer4</button>   
-                </div> 
-                <div class="score-area">
-                    <p id="message"></p>
-                    <p class="scores">Correct <span id="score">0</span></p>
-                    <p class="scores">Incorrect <span id="incorrect">0</span></p>
-                </div>
+        <div class="rules-area hide">
+            <h2>Rules:</h2>
+            <p><i class="far fa-star"></i>You have 10 questions to answer</p>
+            <p><i class="far fa-star"></i>Only your first answer will be accepted</p>
+            <p><i class="far fa-star"></i>You cannot move on to the next question until an answer is given</p>
+            <span class="modal-close">X</span>
         </div>
-        <!--Footer-->
-        <footer class="container">
-            <div class="footer-container">
-                <ul class="social-networks">
-                    <li>
-                        <a href="https://github.com/YesCoops/" target="_blank" rel="noopener"
-                            aria-label="Visit my GitHub page (opens in a new tab)"><i class="fab fa-github"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/in/matthew-cooper-dev" target="_blank" rel="noopener"
-                            aria-label="Visit my LinkedIn page (opens in a new tab)"><i class="fab fa-linkedin"></i></a>
-                    </li>
-                </ul>
+        <div class="results-area hide">
+            <h2>Your results:</h2>
+            <p>Good job <span id="username"></span> !</p>
+            <p>You scored <span id="result-score"></span> out of 10</p>
+            <button type="submit" id="restart-btn">Restart the Quiz</button>
+        </div>
+    </div>
+    <!--Game and Score Areas-->
+    <div class="game-area hide">
+        <div class="question-area container" id="question"></div>
+            <div class="answer-area" id="answer-buttons">
+                <button class="answer-btn">Answer1</button>
+                <button class="answer-btn">Answer2</button>
+                <button class="answer-btn">Answer3</button>
+                <button class="answer-btn">Answer4</button>   
+            </div> 
+            <div class="score-area">
+                <p id="message"></p>
+                <p class="scores">Correct <span id="score">0</span></p>
+                <p class="scores">Incorrect <span id="incorrect">0</span></p>
             </div>
     </div>
-    </footer>
+    <!--Footer-->
+    <footer class="container">
+        <div class="footer-container">
+            <ul class="social-networks">
+                <li>
+                    <a href="https://github.com/YesCoops/" target="_blank" rel="noopener"
+                        aria-label="Visit my GitHub page (opens in a new tab)"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/matthew-cooper-dev" target="_blank" rel="noopener"
+                        aria-label="Visit my LinkedIn page (opens in a new tab)"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>   
     <!--Scripts-->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/questions.js"></script>

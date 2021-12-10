@@ -42,6 +42,10 @@ body {
     height: 100%;
 }
 
+.sr-only {
+    display: none;
+}
+
 /* Heading and Logo */
 
 .header {
