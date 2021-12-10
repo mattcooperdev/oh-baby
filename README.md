@@ -16,17 +16,19 @@ This is an intercative baby quiz called Oh Baby! It is designed to be responsive
 
     -   #### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about babies.
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to play the quiz.
+        - As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about babies.
+        - As a First Time Visitor, I want to be able to easily navigate throughout the site to play the quiz.
         
     -   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to play the quiz again.
+        - As a Returning Visitor, I want to play the quiz again.
 
     -   #### Frequent User Goals
-        1. As a Frequent User, I want to see if I can improve on my previous attempts of the quiz and introduce it to other players. 
+
+        - As a Frequent User, I want to see if I can improve on my previous attempts of the quiz and introduce it to other players. 
 
 -   ### Design
+
     -   #### Colour Scheme
         -   The colour palette used (see below) is a playful, light palette that emphasises the playful nature of the site. All colours pass through AA and AAA accessibility for their respective requirements of text or background, however a change had to be introduced with the correct and incorrect answer classes as the off-white colour used for the text was failing validity. Changing this to a darker colour passed all necessary validations. 
 
@@ -55,7 +57,7 @@ This is an intercative baby quiz called Oh Baby! It is designed to be responsive
     -   Results Wireframe - 
     ![Results Wireframe](assets/md-images/desktop-results.png) 
 
-    Due to the simplicity of the Site, no real changes neededed to be made from the inception of the Wireframes other than the removal of the email submit in the Results modal that I removed due to time constraints, which could be implemented at a later date. 
+    No real changes neededed to be made from the inception of the Wireframes other than the removal of the email submit in the Results modal that I removed due to time constraints, which could be implemented at a later date. 
 
 ---
 
@@ -165,16 +167,7 @@ The site was checked with Google Developments' Lighthouse tool. Below are the re
         1. The user can go straight into a new game. The questions are randomised so the User will not experience the same questions on a second play. 
         2. At the end of the quiz the User is presented with their results and the option to restart the quiz. The idea of giving the User their results gives a light sense of competition. 
 
-    2. As a Returning Visitor, I want to find the best way to get in contact with Matt with any booking or production requests I may have.
-
-        1. The navigation bar clearly highlights the "Connect" section.
-        2. Here they can fill out the form on the page or can follow the social links below the form.
-     
-    3. As a Returning Visitor, I want to find community links.
-        1. The footer contains links to the organisations Instagram, Soundcloud and Mixcloud pages.
-        2. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
-       
-
+               
 -   #### Frequent User Goals
 
     1. As a Frequent User, I want to see if I can improve on my previous attempts of the quiz and introduce it to other players. 
@@ -253,7 +246,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Code
 
 -   The idea for the JavaScript functionality was inspired by a video by [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified)
-
 
 ### Content
 
