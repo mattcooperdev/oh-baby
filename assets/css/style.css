@@ -23,7 +23,6 @@ body {
     background: url(../images/Cute_Clouds_Pattern_on_Blue_Background_generated.jpg) no-repeat center center;
     background-color: var(--white);
     font-family: 'Shadows Into Light Two', sans-serif;
-    height: 100vh;
     color: var(--green);
     text-align: center;
 }
@@ -31,7 +30,7 @@ body {
 /* Utilities */
 
 .container {
-    max-width: 1400px;
+    /* max-width: 1400px; */
     margin: 0 auto;
     padding: 0;
 }
@@ -150,8 +149,8 @@ body {
     background-color: var(--peach);
     border-radius: 10px;
     width: 85vw;
-    height: 70vh;
     max-width: 830px;
+    min-height: 40vh;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
@@ -167,6 +166,7 @@ body {
 
 .answer-area {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
 }
 
