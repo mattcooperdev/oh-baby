@@ -2,7 +2,7 @@
 
 [View the live project here.](https://yescoops.github.io/oh-baby/)
 
-This is an intercative baby quiz called Oh Baby! It is designed to be responsive and accessible on a range of devices, making it easy to navigate for new and returning players.
+This is an intercative baby quiz called Oh Baby! After recently becoming a father for the first time, I wanted to create something that would test my knowledge as well as being fun to play. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for new and returning players.
 
 ---
 
@@ -30,12 +30,12 @@ This is an intercative baby quiz called Oh Baby! It is designed to be responsive
 -   ### Design
 
     -   #### Colour Scheme
-        -   The colour palette used (see below) is a playful, light palette that emphasises the playful nature of the site. All colours pass through AA and AAA accessibility for their respective requirements of text or background, however a change had to be introduced with the correct and incorrect answer classes as the off-white colour used for the text was failing validity. Changing this to a darker colour passed all necessary validations. 
+        -   The colour palette used (see below) is a stylish, light palette that emphasises the playful nature of the site. All colours pass through AA and AAA accessibility for their respective requirements of text or background, however a change had to be introduced with the correct and incorrect answer classes as the off-white colour used for the text was failing validity. Changing this to a darker colour passed all necessary validations. 
 
         ![Colour Scheme](assets/md-images/contrast-checker.png)
         
     -   #### Layout
-        -  A simple page layout gives this site a clean, easy-to-use feel which creates the desired effect for the game. As the content focus is a basic quiz about babies, the uncluttered nature gives a sense of infancy and purity, like babies!
+        -  A simple page layout gives this site a clean, easy-to-use feel which creates the desired effect for the game. As the content focus is a basic quiz about babies, the uncluttered nature gives a sense of infancy and purity, just like babies!
     -   #### Typography
         -   The Shadows into Light Too and Amatic SC fonts are the chosen fonts used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Both fonts have a playful, childlike feeling to them that suits the ethos of the page.
     -   #### Imagery
@@ -84,13 +84,13 @@ This is an intercative baby quiz called Oh Baby! It is designed to be responsive
 
 ![Game Area](assets/md-images/game.png)
 
-- When an answer is input, the User will get visual clarification of their answer with the relevant colours (the text will change colour to suit accessibility). If they are colourblind and cannot distinguish between red and green, the User will also get a message appear on the screen to let them know if they got it right or wrong. 
+- When an answer is input, the User will get visual clarification of their answer with the relevant colours displayed (the text will change colour to suit accessibility). If they are colourblind and cannot distinguish between red and green, the User will also get a message appear on the screen to let them know if they got it right or wrong. A tally of the correct and incorrect answers is also displayed.
 
 ![Answer](assets/md-images/answer.png)
 
 ### Results Modal
-- Once the game is completed and all 10 questions are answered, a results modal will show. 
-- If a name has been input at the start of the game, they will see that appear after "Good job ___ !. Their score will also be displayed, with the option to restart the quiz if they wish.  
+- Once the User has answered 10 questions, the game will end and a results modal will show. 
+- If a name has been input at the start of the game, they will see that appear after "Good job ___ !. Their score will also be displayed, with the option to restart the quiz if they wish. This will take them back to the main page so a User can leave at this point if they so wish.   
 
 ![Results Modal](assets/md-images/results.png)
 
@@ -115,6 +115,8 @@ This is an intercative baby quiz called Oh Baby! It is designed to be responsive
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
 1. [Pexels:](https://pexels.com)
     - Pexels was used to provide some images for the Gigs and Connect sections of the build. 
+1. [JSHint](https://jshint.com/)
+    - JSHint was used for the validation of the script.js and questions.js files. 
 
 ---
 
@@ -126,7 +128,6 @@ The W3C Markup Validator and CSS Validator Services were used to validate all pa
 
 -   W3C CSS Validator - [Results for Main Page](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyescoops.github.io%2Foh-baby%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
--   JSHint 
 
 ## Accessibility Testing
 
@@ -150,29 +151,30 @@ The site was checked with Google Developments' Lighthouse tool. Below are the re
 
     1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about babies.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable page, with a striking heading, logo and background that identify that this is a baby theme. 
-        2. The main points are made immediately with the 'Start' and 'Rules' buttons.
-        3. The user has two options, clicking the 'Start' and 'Rules' buttons, either of which gives them an understanding of what the purpose of the Site is. 
+        - Upon entering the site, users are automatically greeted with a clean and easily readable page, with a striking heading, logo and background that identify this as a baby theme. 
+        - The main points are made immediately with the 'Start' and 'Rules' buttons.
+        - The user has two options, clicking the 'Start' and 'Rules' buttons, either of which gives them an understanding of what the purpose of the Site is. 
+
 
     2. As a First Time Visitor, I want to be able to easily navigate throughout the site to play the quiz.
 
-        1. The site has been designed to be fluid and never to entrap the user. As a first user you will tend to go to the 'Rules' section first to gain an understanding of what the game entails. If not, they will click in to the Game and be presented with the first question in the Game Area.
-        2. The user is unable to progress through the quiz without selecting an answer. The game will automatically move on to the next question after 1.5 seconds when an answer is submitted without the need to make any more clicks by the User. 
+        - The site has been designed to be fluid and never entrap the user. As a first user you will tend to go to the 'Rules' section first to gain an understanding of what the game entails, and that once the quiz has started you cannot leave without completing 10 questions. If they are happy with these conditions, they will click in to the Game and be presented with the first question in the Game Area.
+        - The user is unable to progress through the quiz without selecting an answer. The game will automatically move on to the next question after 1.5 seconds when an answer is submitted without the need to make any more clicks by the User. 
          
 
 -   #### Returning Visitor Goals
 
     1. As a Returning Visitor, I want to play the quiz again.
 
-        1. The user can go straight into a new game. The questions are randomised so the User will not experience the same questions on a second play. 
-        2. At the end of the quiz the User is presented with their results and the option to restart the quiz. The idea of giving the User their results gives a light sense of competition. 
+        - The user can go straight into a new game. The questions are randomised so the User will not experience the same questions on a second play. At present, there are a limited amount of questions that can be played but would like to implement more in future. 
+        - At the end of the quiz the User is presented with their results and the option to restart the quiz. The idea of giving the User their results gives a light sense of competition. 
 
                
 -   #### Frequent User Goals
 
     1. As a Frequent User, I want to see if I can improve on my previous attempts of the quiz and introduce it to other players. 
 
-        1. The user would already be comfortable with the website layout and can easily click the necessary buttons to play the game again.
+        - The user would already be comfortable with the website layout and can easily click the necessary buttons to play the game again.
 
 
 ### Further Testing
@@ -185,14 +187,14 @@ The site was checked with Google Developments' Lighthouse tool. Below are the re
 
 ### Known Bugs
 
--   In certain landscape dimensions the game area does not fit into the viewport and scrolling is required. I initally had overflow set to hidden but realised this was causing bugs with the results and rules modals so scrolling had to be switched on. This only really affects small landscape viewports such as an iPhone 5.
--   On one particular device tested (Oppo G9 Pro) the modal-bg was not covering 100% of the viewport when in landscape mode. 
+-   In certain landscape dimensions the game area does not fit into the viewport vertically and scrolling is required. I initally had overflow set to hidden but realised this was causing bugs with the results and rules modals so scrolling had to be switched on. This only really affects small landscape viewports such as an iPhone 5.
+-   On one particular device tested (Oppo G9 Pro) the modal-bg was not covering 100% of the viewport when in landscape mode. The modal-bg seems to work on smaller and larger devices of the same OS, so I was unable to ascertain whether the issue is limited to this particular device. 
 
 ### Improvements
 
 -   I would like to implement further quizzes in future where a User can select a particular age bracket they wanted to focus their quiz on (eg. newborns, 3-6 months, toddlers).
 -   The ability to send the User their results by inputting their email address in the results modal at the end of the Quiz would be another feature I would like to add. In turn, this data could be used to entice the User back to the site with follow up emails and further promotional messages as the site grew. 
--   The implementation of some fucntionality where if the length of an answer exceeded a certain amount of characters, that answers font size would reduce without affecting the other answers. 
+-   The implementation of some functionality where if the length of an answer exceeded a certain amount of characters, that answers font size would reduce without affecting the other answers. 
 
 ---
   
@@ -250,7 +252,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--   The idea for the JavaScript functionality was inspired by a video by [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified)
+-   The idea for the project was inspired by a video by [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified)
 
 ### Content
 
