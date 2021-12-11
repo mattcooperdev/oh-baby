@@ -183,11 +183,16 @@ The site was checked with Google Developments' Lighthouse tool. Below are the re
 -   A large amount of testing was done to ensure that functionality was working as expected.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
-### Known Bugs / Improvements
+### Known Bugs
 
--   In certain landscape dimensions the game area does not fit into the viewport and scrolling is required. 
+-   In certain landscape dimensions the game area does not fit into the viewport and scrolling is required. I initally had overflow set to hidden but realised this was causing bugs with the results and rules modals so scrolling had to be switched on. This only really affects small landscape viewports such as an iPhone 5.
+-   On one particular device tested (Oppo G9 Pro) the modal-bg was not covering 100% of the viewport when in landscape mode. 
+
+### Improvements
+
 -   I would like to implement further quizzes in future where a User can select a particular age bracket they wanted to focus their quiz on (eg. newborns, 3-6 months, toddlers).
 -   The ability to send the User their results by inputting their email address in the results modal at the end of the Quiz would be another feature I would like to add. In turn, this data could be used to entice the User back to the site with follow up emails and further promotional messages as the site grew. 
+-   The implementation of some fucntionality where if the length of an answer exceeded a certain amount of characters, that answers font size would reduce without affecting the other answers. 
 
 ---
   
