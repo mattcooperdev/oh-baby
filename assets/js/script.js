@@ -172,4 +172,5 @@ restartBtn.addEventListener('click', () => {
     startBtn.classList.remove('hide');
     rulesBtn.classList.remove('hide');
     nameBox.classList.remove('hide');
+    footer.classList.remove('hide');
 });

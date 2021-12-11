@@ -15,7 +15,7 @@
 <body>
     <!--Heading and Logo-->
     <div class="header">
-        <div class="container flex">
+        <div class="flex">
             <h1 class="heading">Oh Baby!</h1>
             <img class="logo" src="assets/images/baby-boy.png" alt="Oh Baby Logo made by Freepik.com">
         </div>
@@ -39,12 +39,12 @@
             <h2>Your results:</h2>
             <p>Good job <span id="username"></span> !</p>
             <p>You scored <span id="result-score"></span> out of 10</p>
-            <button type="submit" id="restart-btn">Restart the Quiz</button>
+            <button type="submit" id="restart-btn">Restart</button>
         </div>
     </div>
     <!--Game and Score Areas-->
     <div class="game-area hide">
-        <div class="question-area container" id="question"></div>
+        <div class="question-area" id="question"></div>
             <div class="answer-area" id="answer-buttons">
                 <button class="answer-btn">Answer1</button>
                 <button class="answer-btn">Answer2</button>
@@ -56,9 +56,10 @@
                 <p class="scores">Correct <span id="score">0</span></p>
                 <p class="scores">Incorrect <span id="incorrect">0</span></p>
             </div>
+        </div>
     </div>
     <!--Footer-->
-    <footer class="container">
+    <footer>
         <div class="footer-container">
             <ul class="social-networks">
                 <li>
