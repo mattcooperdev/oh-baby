@@ -1,6 +1,6 @@
 ![mc logo](assets/md-images/oh-baby-logo.png) 
 
-[View the live project here.](https://yescoops.github.io/oh-baby/)
+[View the live project here.](https://mattcooperdev.github.io/oh-baby/)
 
 This is an intercative baby quiz called Oh Baby! After recently becoming a father for the first time, I wanted to create something that would test my knowledge as well as being fun to play. It is designed to be responsive and accessible on a range of devices, making it easy to navigate for new and returning players.
 
